@@ -21,6 +21,15 @@ body{
     background-color: #e8e8e8;
     padding-top: 60px;
     transition: left 0.5s ease;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidenav_logo{
+    width: 10rem;
+}
+.sidenav_logo2{
+    width: 5rem;
 }
 
 .dropdown{
@@ -66,10 +75,11 @@ li:hover ul.dropdown{
     width: 35px;
     height: 5px;
     background-color: black;
-    margin: 6px 0;
+    margin: 6px 1rem;
+    justify-content: end;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
     .burger-icon span{
         display: none;
     }
@@ -85,6 +95,8 @@ li:hover ul.dropdown{
     .sidenav{
         position: relative;
         width: 100%;
-
+    }
+    .sidenav_logo2{
+        display: none;
     }
 }
